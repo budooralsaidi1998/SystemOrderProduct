@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SystemProductOrder.models
 {
@@ -13,6 +15,7 @@ namespace SystemProductOrder.models
 
         [Required(ErrorMessage = "Email is required.")]
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Invalid email format.")]
+        //[Index(IsUnique =true)]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required.")]
@@ -30,7 +33,9 @@ namespace SystemProductOrder.models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         // Navigation Properties
+        [JsonIgnore]
         public virtual ICollection<Order> Orders { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Review> Reviews { get; set; }
     }
 }
