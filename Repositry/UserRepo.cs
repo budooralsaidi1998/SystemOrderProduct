@@ -1,4 +1,5 @@
-﻿using SystemProductOrder.models;
+﻿using Microsoft.EntityFrameworkCore;
+using SystemProductOrder.models;
 
 namespace SystemProductOrder.Repositry
 {
@@ -75,6 +76,13 @@ namespace SystemProductOrder.Repositry
         public User GetUserByPassword(string password)
         {
             return _context.users.FirstOrDefault(u => u.Password == password);
+        }
+
+        public async Task<User> GetUserById(int userId)
+        {
+            return await _context.users
+                .Where(u => u.Uid == userId)
+                .FirstOrDefaultAsync();
         }
     }
 }

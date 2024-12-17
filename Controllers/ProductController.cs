@@ -6,87 +6,105 @@ using SystemProductOrder.Servieses;
 
 namespace SystemProductOrder.Controllers
 {
-    [Authorize]
+    // This controller handles operations related to products.
+    // It includes endpoints for adding, updating, and fetching products.
+    [Authorize] // Ensures that all actions in this controller require authentication unless overridden.
     [ApiController]
-    [Route("api/[Controller]")]
-    public class ProductController:ControllerBase
+    [Route("api/[Controller]")] // Defines the base route for this controller (e.g., api/Product).
+    public class ProductController : ControllerBase
     {
         private readonly IProductServies _ProductService;
         private readonly IConfiguration _configuration;
+
+        // Constructor for injecting dependencies
         public ProductController(IProductServies ProductService, IConfiguration configuration)
         {
-            _ProductService = ProductService;
-            _configuration = configuration;
-
+            _ProductService = ProductService; // Injected service for handling product-related logic.
+            _configuration = configuration;   // Injected configuration for application settings.
         }
 
-        [HttpPost]
-        [AllowAnonymous]
-        [HttpPost("AddProduct")]
+        // Adds a new product to the system.
+        // Accessible only by users with the "Admin" role.
+        [HttpPost("AddProduct")] // Specifies the route as api/Product/AddProduct.
+        [Authorize(Roles = "Admin")] // Restricts access to users with the Admin role.
         public IActionResult AddProduct(ProductInput product)
         {
             try
             {
+                // Delegates the task of adding a product to the service layer.
                 _ProductService.AddProduct(product);
             }
             catch (Exception ex)
             {
+                // Returns a 400 Bad Request with the error message in case of an exception.
                 return BadRequest(ex.Message);
             }
 
+            // Returns a 200 OK response upon successful addition of the product.
             return Ok("Product added successfully.");
         }
 
-        [HttpPut]
-        [AllowAnonymous]
-        public IActionResult UpdateProduct( int id )
+        // Updates an existing product in the system.
+        // Accessible only by users with the "Admin" role.
+        [HttpPut("UpdateProduct")] // Specifies the route as api/Product/UpdateProduct.
+        [Authorize(Roles = "Admin")] // Restricts access to users with the Admin role.
+        public IActionResult UpdateProduct(int id)
         {
             try
             {
-                _ProductService.UpdateProduct(id );
+                // Delegates the task of updating the product to the service layer.
+                _ProductService.UpdateProduct(id);
             }
             catch (Exception ex)
             {
+                // Returns a 400 Bad Request with the error message in case of an exception.
                 return BadRequest(ex.Message);
             }
 
-            return Ok("Product Updated  successfully.");
+            // Returns a 200 OK response upon successful update of the product.
+            return Ok("Product updated successfully.");
         }
 
-        [HttpGet]
+        // Fetches a paginated list of products with optional filtering by name and price range.
+        [HttpGet("GetPagedProducts")] // Specifies the route as api/Product/GetPagedProducts.
         public IActionResult GetPagedProducts(string name = null, decimal? minPrice = null, decimal? maxPrice = null, int page = 1, int pageSize = 10)
         {
             try
             {
+                // Delegates the task of fetching paginated products to the service layer.
+                var result = _ProductService.GetProducts(name, minPrice, maxPrice, page, pageSize);
 
-            var result = _ProductService.GetProducts(name, minPrice, maxPrice, page, pageSize);
+                // Returns the paginated result.
                 return Ok(result);
             }
             catch (Exception ex)
             {
+                // Returns a 400 Bad Request with the error message in case of an exception.
                 return BadRequest(ex.Message);
             }
-
-          
-
-             // Returns the PagedResult<Product> to the client
         }
 
-        [HttpGet]
+        // Fetches the details of a single product by its ID.
+        [HttpGet("GetProductByid")] // Specifies the route as api/Product/GetProductByid.
         public IActionResult GetProductByid(int id)
         {
             try
             {
-                var result=  _ProductService.GetDetailsProductByID(id);
+                // Delegates the task of fetching the product by ID to the service layer.
+                var result = _ProductService.GetDetailsProductByID(id);
+
+                // Returns the product details.
                 return Ok(result);
             }
             catch (Exception ex)
             {
+                // Returns a 400 Bad Request with the error message in case of an exception.
                 return BadRequest(ex.Message);
             }
-
         }
-
-
     }
+
+
+
 }
+

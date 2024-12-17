@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
 using SystemProductOrder.DTO;
 using SystemProductOrder.models;
 using SystemProductOrder.Repositry;
-
+using System.Security.Cryptography;
+using BCrypt.Net;
 namespace SystemProductOrder.Servieses
 {
     public class UserServies :IUserServies
@@ -34,7 +36,7 @@ namespace SystemProductOrder.Servieses
             {
                 throw new ArgumentException("A user with this password already exists. Please choose a different password.");
             }
-
+            var hashedPassword = HashPassword(user.Password);
             var completeUser = new User
             {
                 Name = user.Name,
@@ -49,15 +51,41 @@ namespace SystemProductOrder.Servieses
             _userrepo.AddUser(completeUser);
         }
 
+        private string HashPassword(string password)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var bytes = Encoding.UTF8.GetBytes(password);
+                var hashBytes = sha256.ComputeHash(bytes);
+                return Convert.ToBase64String(hashBytes);
+            }
+        }
 
         // Method to retrieve a user by email and password
         public User login(string email, string password)
         {
+            var user = _userrepo.GetUserByEmail(email);
+            if (user == null)
+            {
+                throw new ArgumentException("Invalid email or password.");
+            }
 
-            // Delegates the task of retrieving the user to the IUserRepo implementation
-            return _userrepo.GetUser(email, password);
+            // 2. Verify the password against the hashed password in the database
+            if (!VerifyPassword(user.Password, password))
+            {
+                throw new ArgumentException("Invalid email or password.");
+            }
+
+            return user; // Return the user if login is successful
         }
 
+            // Delegates the task of retrieving the user to the IUserRepo implementation
+           // return _userrepo.GetUser(email, password);
+        
+        private bool VerifyPassword(string hashedPassword, string inputPassword)
+        {
+            return BCrypt.Net.BCrypt.Verify(inputPassword, hashedPassword);
+        }
         // Method to retrieve all users related to a specific user ID
         public List<User> GetAllUsers(int userid)
         {

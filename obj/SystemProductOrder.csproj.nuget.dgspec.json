@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\SystemProductOrder\\SystemProductOrder.csproj": {}
+    "C:\\Users\\budoo\\OneDrive\\Desktop\\Ecommerc System\\SystemProductOrder.csproj": {}
   },
   "projects": {
-    "C:\\projects\\SystemProductOrder\\SystemProductOrder.csproj": {
+    "C:\\Users\\budoo\\OneDrive\\Desktop\\Ecommerc System\\SystemProductOrder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\SystemProductOrder\\SystemProductOrder.csproj",
+        "projectUniqueName": "C:\\Users\\budoo\\OneDrive\\Desktop\\Ecommerc System\\SystemProductOrder.csproj",
         "projectName": "SystemProductOrder",
-        "projectPath": "C:\\projects\\SystemProductOrder\\SystemProductOrder.csproj",
-        "packagesPath": "C:\\Users\\codeline User\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\SystemProductOrder\\obj\\",
+        "projectPath": "C:\\Users\\budoo\\OneDrive\\Desktop\\Ecommerc System\\SystemProductOrder.csproj",
+        "packagesPath": "C:\\Users\\budoo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\budoo\\OneDrive\\Desktop\\Ecommerc System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\codeline User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\budoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.0, )"

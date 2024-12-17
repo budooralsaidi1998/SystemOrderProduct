@@ -21,7 +21,7 @@ namespace SystemProductOrder.models
         [Range(0, int.MaxValue, ErrorMessage = "Stock must be non-negative.")]
         public int Stock { get; set; }
 
-        public decimal OverallRating { get; set; } // Calculated based on reviews
+        public double OverallRating { get; set; } // Calculated based on reviews
 
         // Navigation Properties
         public virtual ICollection<Review> Reviews { get; set; }
