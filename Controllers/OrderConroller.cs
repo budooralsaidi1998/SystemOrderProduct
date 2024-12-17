@@ -1,6 +1,84 @@
-﻿namespace SystemProductOrder.Controllers
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
+using SystemProductOrder.DTO;
+using SystemProductOrder.models;
+using SystemProductOrder.Servieses;
+
+namespace SystemProductOrder.Controllers
 {
-    public class OrderConroller
+    [Authorize]
+    [ApiController]
+    [Route("api/[Controller]")]
+    public class OrderConroller:ControllerBase
     {
+        private readonly IOrderServices _orderServices;
+        private readonly IConfiguration _configuration;
+        public OrderConroller(IOrderServices orderServices, IConfiguration configuration)
+        {
+            _orderServices= orderServices;
+          _configuration = configuration;
+
+        }
+        [HttpPost("PlaceOrder")]
+        public IActionResult PlaceOrder([FromBody] List<OrderProductInput> orderDetails)
+        {
+            try
+            {
+                // Assuming we get the UserId from the authenticated user
+                int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+                _orderServices.PlaceOrder(userId, orderDetails);
+                return Ok("Order placed successfully.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [Authorize(Roles = "NormalUser")]
+        [HttpGet("GetOrders")]
+        public IActionResult GetOrdersForUser()
+        {
+            try
+            {
+                // Get the authenticated user's ID
+                var userId = int.Parse(User.FindFirst("id")?.Value);
+
+                // Fetch orders for the user
+                var orders = _orderServices.GetAllOrders(userId);
+
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error fetching orders: {ex.Message}");
+            }
+        }
+        [Authorize(Roles="NormalUser")]
+        [HttpGet("GetOrderDetails/{orderId}")]
+        public IActionResult GetOrderDetails(int orderId)
+        {
+            try
+            {
+                // Get the authenticated user's ID
+                var userId = int.Parse(User.FindFirst("id")?.Value);
+
+                // Fetch the order details
+                var order = _orderServices.GetOrderById(orderId);
+
+                // Ensure the order belongs to the authenticated user
+                if (order == null || order.UserId != userId)
+                {
+                    return Forbid("You do not have access to this order.");
+                }
+
+                return Ok(order);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Error fetching order details: {ex.Message}");
+            }
+        }
     }
 }
