@@ -20,6 +20,9 @@ namespace SystemProductOrder
             builder.Services.AddScoped<IUserRepo, UserRepo>();
             builder.Services.AddScoped<IUserServies, UserServies>();
 
+            builder.Services.AddScoped<IProductRepo, ProductRepo>();
+            builder.Services.AddScoped<IProductServies, ProductServies>();
+
             // Add services to the container.
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
