@@ -1,23 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
+using SystemProductOrder.models;
 
-namespace SystemProductOrder.models
+namespace SystemProductOrder.DTO
 {
-
-    public enum Role
+    public class UserInputDto
     {
-        Admin,
-        NormalUser
-    }
-    public class User
-    {
-        [Key]
-        [JsonIgnore]
-        public int Uid { get; set; }
-
-        [Required(ErrorMessage = "Name is required.")]
-        [MaxLength(100, ErrorMessage = "Name can't exceed 100 characters.")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
@@ -31,20 +18,13 @@ namespace SystemProductOrder.models
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Phone is required.")]
-        [RegularExpression(@"^\+?\d{10,15}$", ErrorMessage = "Invalid phone number format.")]
+        
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Role is required.")]
-       
+
         public Role Roles { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-        // Navigation Properties
-        [JsonIgnore]
-        public virtual ICollection<Order> Orders { get; set; }
-        [JsonIgnore]
-        public virtual ICollection<Review> Reviews { get; set; }
     }
 }
-

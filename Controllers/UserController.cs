@@ -5,28 +5,29 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using SystemProductOrder.DTO;
 using SystemProductOrder.models;
 using SystemProductOrder.Servieses;
 using static SystemProductOrder.Servieses.UserServies;
 
 namespace SystemProductOrder.Controllers
 {
-   // [Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/[Controller]")]
     public class UserController:ControllerBase
     {
-        private readonly IUserServices _userService;
+        private readonly IUserServies _userService;
         private readonly IConfiguration _configuration;
-        public UserController(IUserServices userService, IConfiguration configuration)
+        public UserController(IUserServies userService, IConfiguration configuration)
         {
             _userService = userService;
             _configuration = configuration;
 
         }
         [AllowAnonymous]
-        [HttpPost]
-        public IActionResult addUser([FromBody] User user)
+        [HttpPost("AddUSER")]
+        public IActionResult addUser( UserInputDto user)
         {
             try
             {
@@ -37,15 +38,15 @@ namespace SystemProductOrder.Controllers
                 return BadRequest(ex.Message);
             }
 
-            return Ok(user.Uid);
+            return Ok("User added successfully." );
         }
 
         [AllowAnonymous]
-        [HttpGet]
+        [HttpGet("LOGIN")]
         public IActionResult login(string email, string password)
         {
 
-            var user = _userService.GetUser(email, password);
+            var user = _userService.login(email, password);
 
             if (user != null)
             {
@@ -58,21 +59,31 @@ namespace SystemProductOrder.Controllers
                 return BadRequest("Invalid Credentials");
             }
         }
-        //[HttpGet]
-        //public IActionResult GetAllUsers(int userid)
-        //{
-        //    var user = _userService.GetAllUsers(userid);
-        //}
+        [HttpGet("GETDETALSUSER")]
+        public IActionResult GetAllUsers()
+        {
+            try
+            {
+                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var username = User.Identity.Name;
+                var userRole = User.FindFirst(ClaimTypes.Role)?.Value;  // Custom claim, for example, "admin"
+                return Ok(_userService.GetAllUsers(int.Parse(userId)));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
         [NonAction]
-        public string GenerateJwtToken(string userId, string username)
+        public string GenerateJwtToken(string userId, string role)
         {
             var jwtSettings = _configuration.GetSection("JwtSettings");
             var secretKey = jwtSettings["SecretKey"];
 
             var claims = new[]
             {
-        new Claim(JwtRegisteredClaimNames.Sub, userId),
-        new Claim(JwtRegisteredClaimNames.UniqueName, username),
+        new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+        new Claim(ClaimTypes.Role, role),
         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
     };
 

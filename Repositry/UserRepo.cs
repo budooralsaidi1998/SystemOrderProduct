@@ -67,6 +67,16 @@ namespace SystemProductOrder.Repositry
                 throw new Exception("An error occurred while retrieving users.", ex);
             }
         }
-    }
+        public User GetUserByEmail(string email)
+        {
+            return _context.users.FirstOrDefault(u => u.Email == email);
+        }
 
+        public User GetUserByPassword(string password)
+        {
+            return _context.users.FirstOrDefault(u => u.Password == password);
+        }
+    }
 }
+
+

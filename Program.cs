@@ -18,7 +18,7 @@ namespace SystemProductOrder
 
 
             builder.Services.AddScoped<IUserRepo, UserRepo>();
-            builder.Services.AddScoped<IUserServices, UserServies>();
+            builder.Services.AddScoped<IUserServies, UserServies>();
 
             // Add services to the container.
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
