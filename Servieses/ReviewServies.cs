@@ -18,43 +18,47 @@ namespace SystemProductOrder.Servieses
             _userRepo = userRepo;
         }
 
-        public void AddReview(ReviewInput review)
-        {
-            // Ensure rating is valid
-            if (review.Rating < 1 || review.Rating > 5)
-                throw new ArgumentException("Rating must be between 1 and 5.");
+            public void AddReview(ReviewInput review)
+            {
+                // Ensure rating is valid
+                if (review.Rating < 1 || review.Rating > 5)
+                    throw new ArgumentException("Rating must be between 1 and 5.");
 
-            // Ensure user has purchased the product
-            var orders = _orderRepo.GetOrdersByUserId(review.UserId);
-            var hasPurchased = orders.Any(order => order.OrderProducts.Any(op => op.ProductId == review.ProductId));
+                // Ensure user has purchased the product
+                var orders = _orderRepo.GetOrdersByUserId(review.UserId);
+                var hasPurchased = orders.Any(order => order.OrderProducts.Any(op => op.ProductId == review.ProductId));
 
-            if (!hasPurchased)
-                throw new InvalidOperationException("User must purchase the product before reviewing.");
+                if (!hasPurchased)
+                    throw new InvalidOperationException("User must purchase the product before reviewing.");
 
-            // Ensure user has not already reviewed the product
-            var existingReview = _reviewRepo.GetReviewByUserAndProduct(review.UserId, review.ProductId);
-            if (existingReview != null)
-                throw new InvalidOperationException("User has already reviewed this product.");
-
+                // Ensure user has not already reviewed the product
+                var existingReview = _reviewRepo.GetReviewByUserAndProduct(review.UserId, review.ProductId);
+                if (existingReview != null)
+                    throw new InvalidOperationException("User has already reviewed this product.");
+                //to know the product name 
+            var productname = _productRepo.GetProductsByID(review.ProductId);
+            if (productname == null)
+                throw new KeyNotFoundException("Product not found.");
             // Add the review
             //review.ReviewDate = DateTime.UtcNow;
             // Set ReviewDate
             var newre = new Review
             {
                 UserId = review.UserId,
-                ProductId = review.ProductId,
-                Comment = review.Comment,
+                //ProductId = review.ProductId,
+                ProductName = productname.Name,
+                 Comment = review.Comment,
                 Rating = review.Rating,
                 //ReviewDate = review.ReviewDate,
             };
-            _reviewRepo.AddReview(newre);
+                _reviewRepo.AddReview(newre);
 
-            // Recalculate overall rating
-            var overallRating = _reviewRepo.CalculateOverallRating(review.ProductId);
-            var product = _productRepo.GetProductsByID(review.ProductId);
-            product.OverallRating = overallRating;
-            _productRepo.UpdateProduct(product);
-        }
+                // Recalculate overall rating
+                var overallRating = _reviewRepo.CalculateOverallRating(review.ProductId);
+                var product = _productRepo.GetProductsByID(review.ProductId);
+                product.OverallRating = overallRating;
+                _productRepo.UpdateProduct(product);
+            }
 
         public void UpdateReview(int userId, int reviewId, int rating, string comment)
         {

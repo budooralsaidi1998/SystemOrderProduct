@@ -15,35 +15,48 @@ namespace SystemProductOrder.Controllers
     {
         private readonly IProductServies _ProductService;
         private readonly IConfiguration _configuration;
+        private readonly IUserServies userServies;
 
         // Constructor for injecting dependencies
-        public ProductController(IProductServies ProductService, IConfiguration configuration)
+        public ProductController(IProductServies ProductService, IConfiguration configuration , IUserServies _userServies)
         {
             _ProductService = ProductService; // Injected service for handling product-related logic.
             _configuration = configuration;   // Injected configuration for application settings.
+             userServies = _userServies;
         }
 
-        // Adds a new product to the system.
-        // Accessible only by users with the "Admin" role.
-        [HttpPost("AddProduct")] // Specifies the route as api/Product/AddProduct.
-        [Authorize(Roles = "Admin")] // Restricts access to users with the Admin role.
+
+        [HttpPost("AddProduct")]
+        [ProducesResponseType(StatusCodes.Status200OK)] // For successful addition
+        [ProducesResponseType(StatusCodes.Status403Forbidden)] // For forbidden access
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] // For validation errors
         public IActionResult AddProduct(ProductInput product)
         {
             try
             {
-                // Delegates the task of adding a product to the service layer.
-                _ProductService.AddProduct(product);
+                // Check if the user is authorized
+                //var isAdmin = User.Claims.Any(c => c.Type == "Role" && c.Value == "Admin");
+                //if (!isAdmin)
+                //{
+                //    return Forbid("You do not have permission to add products.");
+                //}
+                //var userId = int.Parse(User.Identity.Name); // Get User ID from claims
+                //var user = userServies.GetUserForAccess(userId);
+
+                //if (user.Roles = 1) // Check if role is "Admin" (1)
+                //{
+                //    return Forbid("You do not have permission to add products.");
+                //}
+                // Call the service to add the product
+                _ProductService.AddProduct(product,User );
+
+                return Ok("Product added successfully.");
             }
             catch (Exception ex)
             {
-                // Returns a 400 Bad Request with the error message in case of an exception.
-                return BadRequest(ex.Message);
+                return BadRequest(new { Error = ex.Message });
             }
-
-            // Returns a 200 OK response upon successful addition of the product.
-            return Ok("Product added successfully.");
         }
-
         // Updates an existing product in the system.
         // Accessible only by users with the "Admin" role.
         [HttpPut("UpdateProduct")] // Specifies the route as api/Product/UpdateProduct.

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using SystemProductOrder.DTO;
 using SystemProductOrder.Migrations;
 using SystemProductOrder.models;
@@ -19,19 +20,65 @@ namespace SystemProductOrder.Servieses
         }
 
         // Adds a new product to the system.
-        public void AddProduct(ProductInput input)
+        public void AddProduct(ProductInput input, ClaimsPrincipal user)
         {
-            // Creates a new Product object from the input data transfer object (DTO).
-            var newProduct = new Product
+            //Creates a new Product object from the input data transfer object(DTO).
+            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
+            if (!isAdmin)
             {
-                Name = input.Name,
-                Price = input.Price,
-                Stock = input.Stock,
-                Description = input.Description
-            };
+                throw new UnauthorizedAccessException("Only admin users can add products.");
+            }
 
-            // Delegates the task of adding the product to the repository layer.
-            _productrepo.AddProduct(newProduct);
+            var nameproduct=_productrepo.GetNameProduct(input.Name);
+            if (nameproduct != null)
+                {
+
+                throw new ArgumentException("Product name is already exits .");
+            }
+            {
+                
+            }
+            if (string.IsNullOrWhiteSpace(input.Name))
+            {
+                throw new ArgumentException("Product name is required and cannot be empty.");
+            }
+
+            if (input.Price <= 0)
+            {
+                throw new ArgumentException("Product price must be greater than zero.");
+            }
+
+            if (input.Stock < 0)
+            {
+                throw new ArgumentException("Product stock cannot be negative.");
+            }
+
+            //if (input.Description?.Length > 500)
+            //{
+            //    throw new ArgumentException("Product description cannot exceed 500 characters.");
+            //}
+            try
+            {
+                // Create a new Product object
+                var newProduct = new Product
+                {
+                    Name = input.Name.Trim(), // Ensure no trailing spaces
+                    Price = input.Price,
+                    Stock = input.Stock,
+                    Description = input.Description // Handle null description gracefully
+                };
+
+                // Add the product to the repository
+                _productrepo.AddProduct(newProduct);
+            }
+            catch (Exception ex)
+            {
+                // Log the error (if logging is implemented)
+                Console.WriteLine($"Error adding product: {ex.Message}");
+
+                // Rethrow the exception for higher-level handling
+                throw new InvalidOperationException("An error occurred while adding the product.", ex);
+            }
         }
 
         // Retrieves a paginated and filtered list of products.

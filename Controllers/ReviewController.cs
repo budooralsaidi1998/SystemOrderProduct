@@ -21,7 +21,7 @@ namespace SystemProductOrder.Controllers
         }
 
         // 1. Add a review for a product
-    
+
         [HttpPost("AddReview")]
         [Authorize] // Ensure the user is authenticated
         public IActionResult AddReview([FromBody] ReviewInput review) // Now accepting Review object
@@ -65,33 +65,32 @@ namespace SystemProductOrder.Controllers
             }
         }
 
+
         // 3. Update a review (only by the user who created it)
-        [HttpPut("UpdateReview")]
-        public async Task<IActionResult> UpdateReview(int reviewId, [FromBody] ReviewInput reviewInput)
+        [HttpPut("UpdateReview/{reviewId}")]
+        [Authorize] // Ensure the user is authenticated
+        public IActionResult UpdateReview(int reviewId, [FromBody] ReviewInput reviewInput)
         {
             try
             {
-                var userId = int.Parse(User.Identity.Name); // Get the authenticated user's ID
+                // Get the authenticated user's ID
+                var userId = int.Parse(User.Identity.Name);
 
-                var existingReview =  _reviewService.GetReviewById(reviewId);
+                // Fetch the existing review
+                var existingReview = _reviewService.GetReviewById(reviewId);
                 if (existingReview == null)
                 {
-                    return NotFound("Review not found."); 
+                    return NotFound("Review not found.");
                 }
 
-                // Check if the review belongs to the current user
+                // Ensure the review belongs to the current user
                 if (existingReview.UserId != userId)
                 {
                     return Unauthorized("You can only update your own review.");
                 }
 
-                // Update the review
-                existingReview.Rating = reviewInput.Rating;
-                existingReview.Comment = reviewInput.Comment;
-                 _reviewService.UpdateReview(existingReview);
-
-                // Recalculate the product's overall rating
-                await _reviewService.RecalculateProductRating(existingReview.ProductId);
+                // Update the review using the service
+                _reviewService.UpdateReview(userId, reviewId, reviewInput.Rating, reviewInput.Comment);
 
                 return Ok("Review updated successfully.");
             }
@@ -103,35 +102,36 @@ namespace SystemProductOrder.Controllers
 
         // 4. Delete a review (only by the user who created it)
         [HttpDelete("DeleteReview")]
-        public async Task<IActionResult> DeleteReview(int reviewId)
+public async Task<IActionResult> DeleteReview(int reviewId)
+{
+    try
+    {
+        var userId = int.Parse(User.Identity.Name); // Get the authenticated user's ID
+
+        var existingReview =  _reviewService.GetReviewById(reviewId);
+        if (existingReview == null)
         {
-            try
-            {
-                var userId = int.Parse(User.Identity.Name); // Get the authenticated user's ID
-
-                var existingReview = await _reviewService.GetReviewById(reviewId);
-                if (existingReview == null)
-                {
-                    return NotFound("Review not found.");
-                }
-
-                // Check if the review belongs to the current user
-                if (existingReview.UserId != userId)
-                {
-                    return Unauthorized("You can only delete your own review.");
-                }
-
-                // Delete the review
-                await _reviewService.DeleteReview(reviewId);
-
-                // Recalculate the product's overall rating
-                await _reviewService.RecalculateProductRating(existingReview.ProductId);
-
-                return Ok("Review deleted successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            return NotFound("Review not found.");
         }
+
+        // Check if the review belongs to the current user
+        if (existingReview.UserId != userId)
+        {
+            return Unauthorized("You can only delete your own review.");
+        }
+
+        // Delete the review
+         _reviewService.DeleteReview(userId, reviewId);
+
+        // Recalculate the product's overall rating
+        // _reviewService.RecalculateProductRating(existingReview.ProductId);
+
+        return Ok("Review deleted successfully.");
     }
+    catch (Exception ex)
+    {
+        return BadRequest(ex.Message);
+    }
+}
+}
+}

@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 using BCrypt.Net;
 namespace SystemProductOrder.Servieses
 {
-    public class UserServies :IUserServies
+    public class UserServies : IUserServies
     {
 
         // Private readonly field to store the IUserRepo instance
@@ -24,19 +24,29 @@ namespace SystemProductOrder.Servieses
         // Method to add a new user
         public void AddUser(UserInputDto user)
         {
+            if (user.Name == null)
+            {
+                throw new ArgumentException("the name is requried ");
+            }
             var existingUserByEmail = _userrepo.GetUserByEmail(user.Email); // New method in IUserRepo
             if (existingUserByEmail != null)
             {
                 throw new ArgumentException("A user with this email already exists.");
             }
 
+            var existingUserByPhone = _userrepo.GetUserByPhone(user.Phone); // New method in IUserRepo
+            if (existingUserByPhone != null)
+            {
+                throw new ArgumentException("A user with this phone number already exists.");
+            }
             // Check for duplicate password
             var existingUserByPassword = _userrepo.GetUserByPassword(user.Password); // New method in IUserRepo
             if (existingUserByPassword != null)
             {
                 throw new ArgumentException("A user with this password already exists. Please choose a different password.");
             }
-            var hashedPassword = HashPassword(user.Password);
+            //var hashedPassword = HashPassword(user.Password);
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             var completeUser = new User
             {
                 Name = user.Name,
@@ -51,15 +61,15 @@ namespace SystemProductOrder.Servieses
             _userrepo.AddUser(completeUser);
         }
 
-        private string HashPassword(string password)
-        {
-            using (var sha256 = SHA256.Create())
-            {
-                var bytes = Encoding.UTF8.GetBytes(password);
-                var hashBytes = sha256.ComputeHash(bytes);
-                return Convert.ToBase64String(hashBytes);
-            }
-        }
+        //private string HashPassword(string password)
+        //{
+        //    using (var sha256 = SHA256.Create())
+        //    {
+        //        var bytes = Encoding.UTF8.GetBytes(password);
+        //        var hashBytes = sha256.ComputeHash(bytes);
+        //        return Convert.ToBase64String(hashBytes);
+        //    }
+        //}
 
         // Method to retrieve a user by email and password
         public User login(string email, string password)
@@ -71,33 +81,35 @@ namespace SystemProductOrder.Servieses
             }
 
             // 2. Verify the password against the hashed password in the database
-            if (!VerifyPassword(user.Password, password))
+            if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.Password))
             {
-                throw new ArgumentException("Invalid email or password.");
+                throw new UnauthorizedAccessException("Invalid credentials.");
             }
-
             return user; // Return the user if login is successful
         }
 
-            // Delegates the task of retrieving the user to the IUserRepo implementation
-           // return _userrepo.GetUser(email, password);
-        
-        private bool VerifyPassword(string hashedPassword, string inputPassword)
-        {
-            return BCrypt.Net.BCrypt.Verify(inputPassword, hashedPassword);
-        }
+        // Delegates the task of retrieving the user to the IUserRepo implementation
+        // return _userrepo.GetUser(email, password);
+
+        //private bool VerifyPassword(string hashedPassword, string inputPassword)
+        //{
+        //    return BCrypt.Net.BCrypt.Verify(inputPassword, hashedPassword);
+        //}
         // Method to retrieve all users related to a specific user ID
         public List<User> GetAllUsers(int userid)
         {
-            //var usser = new UserOutputDot
-            //{
-            //    Email = user.Email,
-            //    Password = user.Password,
-            //    Phone = user.Phone,
-            //};
+
 
             // Delegates the task of retrieving all users to the IUserRepo implementation
             return _userrepo.GetAllUsers(userid);
+        }
+
+        public User GetUserForAccess(int userid)
+        {
+
+
+            // Delegates the task of retrieving all users to the IUserRepo implementation
+            return _userrepo.GetUserByIDFORAccess(userid);
         }
 
 

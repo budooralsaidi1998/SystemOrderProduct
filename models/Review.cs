@@ -10,6 +10,9 @@ namespace SystemProductOrder.models
 
         public int UserId { get; set; }
 
+        [Required]
+        public string ProductName {  get; set; }
+
         [ForeignKey("UserId")]
         public virtual User User { get; set; }
 

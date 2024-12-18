@@ -84,6 +84,16 @@ namespace SystemProductOrder.Repositry
                 .Where(u => u.Uid == userId)
                 .FirstOrDefaultAsync();
         }
+
+        public User GetUserByPhone(string phone)
+        {
+            return _context.users.FirstOrDefault(u => u.Phone == phone);
+        }
+        public User GetUserByIDFORAccess(int userId)
+        {
+            return _context.users.FirstOrDefault(u => u.Uid == userId);
+        }
+
     }
 }
 

@@ -9,5 +9,7 @@ namespace SystemProductOrder.Repositry
         Product GetProductsByID(int id);
         int GetTotalProductCount();
         void UpdateProduct(Product product);
-    }
+        Product GetNameProduct(string name);
+        
+        
 }

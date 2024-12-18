@@ -51,5 +51,9 @@ namespace SystemProductOrder.Repositry
         {
             return _context.products.Where(us => us.Pid == id).FirstOrDefault();
         }
+        public Product GetNameProduct(string name)
+        {
+            return _context.products.Where(us => us.Name == name).FirstOrDefault();
+        }
     }
 }
