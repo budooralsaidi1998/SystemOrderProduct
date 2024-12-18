@@ -1,4 +1,5 @@
-﻿using SystemProductOrder.DTO;
+﻿using System.Security.Claims;
+using SystemProductOrder.DTO;
 using SystemProductOrder.models;
 using SystemProductOrder.Repositry;
 
@@ -70,14 +71,27 @@ namespace SystemProductOrder.Servieses
             }
 
         }
-        public List<Order> GetAllOrders(int id)
+        public List<Order> GetAllOrders(int id,ClaimsPrincipal user)
         {
 
+            //Creates a new Product object from the input data transfer object(DTO).
+            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
+            if (!isAdmin)
+            {
+                throw new UnauthorizedAccessException("Only admin users can Show the order  products.");
+            }
             return _orderRepo.GetOrdersByUserId(id);
         }
 
-        public Order GetOrderById(int id)
+        public Order GetOrderById(int id, ClaimsPrincipal user)
         {
+
+            //Creates a new Product object from the input data transfer object(DTO).
+            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
+            if (!isAdmin)
+            {
+                throw new UnauthorizedAccessException("Only admin users can Show the order  products.");
+            }
             return _orderRepo.GetOrderDetailsById(id);
         }
         public async Task<bool> HasUserPurchasedProduct(int userId, int productId)

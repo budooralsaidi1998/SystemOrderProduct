@@ -60,7 +60,8 @@ namespace SystemProductOrder.Controllers
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Uid.ToString()), // User ID
                 new Claim(ClaimTypes.Name, user.Name),                    // User Name
-                new Claim(ClaimTypes.Role, user.Roles.ToString())         // User Role (Admin/NormalUser)
+                new Claim(ClaimTypes.Role, user.Roles.ToString()) ,
+                new Claim("id", user.Uid.ToString())// User Role (Admin/NormalUser)
             };
 
                     // Generate JWT token using claims

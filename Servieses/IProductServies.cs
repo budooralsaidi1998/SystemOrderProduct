@@ -9,6 +9,6 @@ namespace SystemProductOrder.Servieses
         void AddProduct(ProductInput input, ClaimsPrincipal user);
         Product GetDetailsProductByID(int id);
         PagedResult<Product> GetProducts(string name, decimal? minPrice = null, decimal? maxPrice = null, int page = 1, int pageSize = 10);
-        void UpdateProduct(int id);
+        void UpdateProduct(int id, ProductInput updatedProduct, ClaimsPrincipal user);
     }
 }

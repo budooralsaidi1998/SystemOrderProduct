@@ -60,13 +60,13 @@ namespace SystemProductOrder.Controllers
         // Updates an existing product in the system.
         // Accessible only by users with the "Admin" role.
         [HttpPut("UpdateProduct")] // Specifies the route as api/Product/UpdateProduct.
-        [Authorize(Roles = "Admin")] // Restricts access to users with the Admin role.
-        public IActionResult UpdateProduct(int id)
+        
+        public IActionResult UpdateProduct(int id,ProductInput input)
         {
             try
             {
                 // Delegates the task of updating the product to the service layer.
-                _ProductService.UpdateProduct(id);
+                _ProductService.UpdateProduct(id,input ,User);
             }
             catch (Exception ex)
             {

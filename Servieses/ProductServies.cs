@@ -29,12 +29,12 @@ namespace SystemProductOrder.Servieses
                 throw new UnauthorizedAccessException("Only admin users can add products.");
             }
 
-            var nameproduct=_productrepo.GetNameProduct(input.Name);
-            if (nameproduct != null)
-                {
+            //var nameproduct=_productrepo.GetNameProduct(input.Name);
+            //if (nameproduct != null)
+            //    {
 
-                throw new ArgumentException("Product name is already exits .");
-            }
+            //    throw new ArgumentException("Product name is already exits .");
+            //}
             {
                 
             }
@@ -125,29 +125,32 @@ namespace SystemProductOrder.Servieses
         }
 
         // Updates an existing product in the system.
-        public void UpdateProduct(int id)
+        public void UpdateProduct(int id, ProductInput updatedProduct, ClaimsPrincipal user)
         {
-            // Retrieves the existing product by its ID from the repository layer.
+            // Check if the user is an admin
+            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
+            if (!isAdmin)
+            {
+                throw new UnauthorizedAccessException("Only admin users can update products.");
+            }
+
+            // Retrieve the existing product by ID from the repository
             var existingProduct = _productrepo.GetProductsByID(id);
 
-            // Throws an exception if the product is not found.
+            // Throw an exception if the product is not found
             if (existingProduct == null)
             {
                 throw new Exception("Product not found.");
             }
 
-            // Creates a new Product object with updated attributes.
-            // Here, you'd likely replace attributes with updated values.
-            var newUpdate = new Product
-            {
-                Name = existingProduct.Name, // Retains the existing name for simplicity.
-                Price = existingProduct.Price, // Retains the existing price.
-                Stock = existingProduct.Stock, // Retains the existing stock.
-                Description = existingProduct.Description // Retains the existing description.
-            };
+            // Update the product with new values from the DTO
+            existingProduct.Name = updatedProduct.Name;
+            existingProduct.Price = updatedProduct.Price;
+            existingProduct.Stock = updatedProduct.Stock ;
+            existingProduct.Description = updatedProduct.Description;
 
-            // Delegates the task of updating the product to the repository layer.
-            _productrepo.UpdateProduct(newUpdate);
+            // Delegate the task of updating the product to the repository
+            _productrepo.UpdateProduct(existingProduct);
         }
 
         // Retrieves a product's details by its ID.

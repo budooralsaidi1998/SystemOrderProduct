@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace SystemProductOrder.models
 {
@@ -21,6 +22,7 @@ namespace SystemProductOrder.models
         public decimal TotalAmount { get; set; } // This can be calculated from OrderProducts.
 
         // Navigation Properties
+        [JsonIgnore]
         public virtual ICollection<OrderPorduct> OrderProducts { get; set; }
     }
 }

@@ -35,18 +35,21 @@ namespace SystemProductOrder.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        [Authorize(Roles = "NormalUser")]
+       
         [HttpGet("GetOrders")]
         public IActionResult GetOrdersForUser()
         {
             try
             {
-                // Get the authenticated user's ID
-                var userId = int.Parse(User.FindFirst("id")?.Value);
+                // Get the user's ID from the token
+                var userIdClaim = User.FindFirst("id");
+                if (userIdClaim == null) return Unauthorized("User ID claim is missing.");
+
+                int userId;
+                if (!int.TryParse(userIdClaim.Value, out userId)) return BadRequest("Invalid user ID claim.");
 
                 // Fetch orders for the user
-                var orders = _orderServices.GetAllOrders(userId);
+                var orders = _orderServices.GetAllOrders(userId, User);
 
                 return Ok(orders);
             }
@@ -55,17 +58,32 @@ namespace SystemProductOrder.Controllers
                 return BadRequest($"Error fetching orders: {ex.Message}");
             }
         }
-        [Authorize(Roles="NormalUser")]
+
+        [Authorize(Roles="Admin")]
         [HttpGet("GetOrderDetails/{orderId}")]
         public IActionResult GetOrderDetails(int orderId)
         {
             try
             {
-                // Get the authenticated user's ID
-                var userId = int.Parse(User.FindFirst("id")?.Value);
+                // Get the user's ID from the token
+                var userIdClaim = User.FindFirst("id");
+              
+                //var userIdClaim = User.FindFirst("id");
+                if (userIdClaim == null)
+                {
+                    return Unauthorized("User ID claim is missing.");
+                }
 
-                // Fetch the order details
-                var order = _orderServices.GetOrderById(orderId);
+                int userId;
+                if (!int.TryParse(userIdClaim.Value, out userId))
+                {
+                    return BadRequest("Invalid user ID claim.");
+                }
+                //int userId;
+                //if (!int.TryParse(userIdClaim.Value, out userId)) return BadRequest("Invalid user ID claim.");
+
+                // Get the order details
+                var order = _orderServices.GetOrderById(orderId, User);
 
                 // Ensure the order belongs to the authenticated user
                 if (order == null || order.UserId != userId)
@@ -80,5 +98,6 @@ namespace SystemProductOrder.Controllers
                 return BadRequest($"Error fetching order details: {ex.Message}");
             }
         }
+
     }
 }
