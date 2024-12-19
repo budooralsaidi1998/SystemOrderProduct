@@ -15,58 +15,99 @@ namespace SystemProductOrder.Repositry
             _context = context;
         }
 
+        //public void AddReview(Review review)
+        //{
+        //    _context.reviews.Add(review);
+        //    _context.SaveChanges();
+        //}
+
+        //public void UpdateReview(Review review)
+        //{
+        //    _context.reviews.Update(review);
+        //    _context.SaveChanges();
+        //}
+
+        //public void DeleteReview(int reviewId)
+        //{
+        //    var review = _context.reviews.Find(reviewId);
+        //    if (review != null)
+        //    {
+        //        _context.reviews.Remove(review);
+        //        _context.SaveChanges();
+        //    }
+        //}
+
+        //public Review GetReview(int userId, int productId)
+        //{
+        //    return _context.reviews.FirstOrDefault(r => r.UserId == userId && r.ProductId == productId);
+        //}
+
+        //public List<Review> GetReviewsForProduct(int productId, int page, int pageSize)
+        //{
+        //    return _context.reviews
+        //        .Where(r => r.ProductId == productId)
+        //        .OrderByDescending(r => r.ReviewDate)
+        //        .Skip((page - 1) * pageSize)
+        //        .Take(pageSize)
+        //        .ToList();
+        //}
+
+        //public double CalculateOverallRating(int productId)
+        //{
+        //    var ratings = _context.reviews.Where(r => r.ProductId == productId).Select(r => r.Rating);
+        //    return ratings.Any() ? ratings.Average() : 0.0;
+        //}
+        //public async Task<Review> GetReviewByUserAndProduct(int userId, int productId)
+        //{
+        //    return await _context.reviews
+        //        .Where(r => r.UserId == userId && r.ProductId == productId)
+        //        .FirstOrDefaultAsync();
+        //}
+        //public Review GetReviewById(int reviewId)
+        //{
+        //    return _context.reviews
+        //        .FirstOrDefault(r => r.Rid == reviewId);  // Assuming "Id" is the primary key of the review
+        //}
+
+
+        // Check if user has ordered the product
+        public bool UserHasOrderedProduct(int userId, int productId)
+        {
+            return _context.orders
+                             .Any(o => o.UserId == userId && o.OrderProducts.Any(op => op.ProductId == productId));
+        }
+
+        // Check if a review already exists for the product by the user
+        public bool HasUserReviewedProduct(int userId, int productId)
+        {
+            return _context.reviews
+                             .Any(r => r.UserId == userId && r.ProductId == productId);
+        }
+
+        // Add a review to the database
         public void AddReview(Review review)
         {
             _context.reviews.Add(review);
             _context.SaveChanges();
         }
 
-        public void UpdateReview(Review review)
+        // Get all reviews for a product to calculate the average rating
+        public List<Review> GetReviewsByProductId(int productId)
         {
-            _context.reviews.Update(review);
-            _context.SaveChanges();
+            return _context.reviews
+                             .Where(r => r.ProductId == productId)
+                             .ToList();
         }
 
-        public void DeleteReview(int reviewId)
+        // Update the overall rating of the product
+        public void UpdateProductRating(int productId, double averageRating)
         {
-            var review = _context.reviews.Find(reviewId);
-            if (review != null)
+            var product = _context.products.FirstOrDefault(p => p.Pid == productId);
+            if (product != null)
             {
-                _context.reviews.Remove(review);
+                product.OverallRating = averageRating;
                 _context.SaveChanges();
             }
-        }
-
-        public Review GetReview(int userId, int productId)
-        {
-            return _context.reviews.FirstOrDefault(r => r.UserId == userId && r.ProductId == productId);
-        }
-
-        public List<Review> GetReviewsForProduct(int productId, int page, int pageSize)
-        {
-            return _context.reviews
-                .Where(r => r.ProductId == productId)
-                .OrderByDescending(r => r.ReviewDate)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
-        }
-
-        public double CalculateOverallRating(int productId)
-        {
-            var ratings = _context.reviews.Where(r => r.ProductId == productId).Select(r => r.Rating);
-            return ratings.Any() ? ratings.Average() : 0.0;
-        }
-        public async Task<Review> GetReviewByUserAndProduct(int userId, int productId)
-        {
-            return await _context.reviews
-                .Where(r => r.UserId == userId && r.ProductId == productId)
-                .FirstOrDefaultAsync();
-        }
-        public Review GetReviewById(int reviewId)
-        {
-            return _context.reviews
-                .FirstOrDefault(r => r.Rid == reviewId);  // Assuming "Id" is the primary key of the review
         }
     }
 
