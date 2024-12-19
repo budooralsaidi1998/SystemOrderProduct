@@ -1,185 +1,205 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\",
+  "WorkspaceRootPath": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\controllers\\orderconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\orderconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\productservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\productservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\userservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\userservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\iproductservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iproductservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\ireviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\reviewservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\reviewservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\orderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\controllers\\orderconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\orderconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\models\\orderporduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\orderporduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iorderservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\iorderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\iorderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\orderproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\orderproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\orderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\orderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219100920_updateAddProductnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241219100920_updateAddProductnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\iorderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iorderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\userservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\userservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\productservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\productservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\iuserservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iuserservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\servieses\\iproductservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\iproductservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\productrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\orderproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\orderproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\iproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219073046_updateName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241219073046_updateName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\reviewservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\reviewservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\iuserrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\codeline User\\AppData\\Local\\SourceServer\\d54004a0cdcc2c10aee73b58309ae1442339019c7fed72da20aeaa9ca2c2221f\\Servieses\\UserServies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\reviewrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\repositry\\reviewrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\reviewrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:controllers\\orderproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241218053529_updateReviewAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241218053529_updateReviewAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\orderproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\orderproductinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\reviewinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\reviewinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\reviewinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241217183831_updatetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241217183831_updatetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241217183831_updatetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\orderrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\servieses\\orderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:servieses\\orderprdouctservies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\repositry\\orderproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:repositry\\orderproductrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\models\\orderporduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:models\\orderporduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\useroutputdot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\useroutputdot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\useroutputdot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\productinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\productinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\productinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\dto\\userinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\dto\\userinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:dto\\userinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\systemproductorder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\systemproductorder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:systemproductorder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241216103627_createinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241216103627_createinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241216103627_createinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241216121722_addjsonignore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241216121722_addjsonignore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241216121722_addjsonignore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241217103141_updatephone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241217103141_updatephone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241217103141_updatephone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241217092147_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241217092147_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241217092147_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241217091556_updatecascading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241217091556_updatecascading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241217091556_updatecascading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\source\\repos\\systemorderproduct\\migrations\\20241217091329_addenumrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241217091329_addenumrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241217091329_addenumrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|c:\\users\\codeline user\\onedrive\\desktop\\last update ecommercs\\migrations\\20241218053529_updatereviewadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205BF15D-344F-4E49-9E1C-B3E6F1F3A58D}|SystemProductOrder.csproj|solutionrelative:migrations\\20241218053529_updatereviewadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -189,62 +209,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGsAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "IOrderRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IOrderRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\IOrderRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IOrderRepo.cs",
+              "RelativeToolTip": "Repositry\\IOrderRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:50:48.765Z",
+              "WhenOpened": "2024-12-19T06:53:51.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductServies.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\ProductServies.cs",
-              "RelativeDocumentMoniker": "Servieses\\ProductServies.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\ProductServies.cs",
-              "RelativeToolTip": "Servieses\\ProductServies.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAB0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:49:04.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\User.cs",
               "RelativeDocumentMoniker": "models\\User.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\User.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\User.cs",
               "RelativeToolTip": "models\\User.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAARAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwAwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:45:41.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Review.cs",
+              "RelativeDocumentMoniker": "models\\Review.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Review.cs",
+              "RelativeToolTip": "models\\Review.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:46:51.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Product.cs",
               "RelativeDocumentMoniker": "models\\Product.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Product.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Product.cs",
               "RelativeToolTip": "models\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -253,102 +269,184 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "OrderPorduct.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\OrderPorduct.cs",
+              "RelativeDocumentMoniker": "models\\OrderPorduct.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\OrderPorduct.cs",
+              "RelativeToolTip": "models\\OrderPorduct.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:46:28.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Order.cs",
               "RelativeDocumentMoniker": "models\\Order.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Order.cs*",
-              "RelativeToolTip": "models\\Order.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\models\\Order.cs",
+              "RelativeToolTip": "models\\Order.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwA8AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:46:10.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IProductServies.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IProductServies.cs",
-              "RelativeDocumentMoniker": "Servieses\\IProductServies.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IProductServies.cs",
-              "RelativeToolTip": "Servieses\\IProductServies.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T09:24:17.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderConroller.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\OrderConroller.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderConroller.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\OrderConroller.cs",
-              "RelativeToolTip": "Controllers\\OrderConroller.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAwCoAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:51:06.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "OrderServices.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\OrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\OrderServices.cs",
               "RelativeDocumentMoniker": "Servieses\\OrderServices.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\OrderServices.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\OrderServices.cs",
               "RelativeToolTip": "Servieses\\OrderServices.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAA5wEkAAAAbAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwF4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:49:24.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IOrderServices.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IOrderServices.cs",
-              "RelativeDocumentMoniker": "Servieses\\IOrderServices.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IOrderServices.cs",
-              "RelativeToolTip": "Servieses\\IOrderServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Controllers\\ReviewController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T05:59:55.355Z",
+              "WhenOpened": "2024-12-16T09:52:05.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAAEAAAAAOAAAA",
+              "DocumentIndex": 1,
+              "Title": "ReviewServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\ReviewServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\ReviewServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\ReviewServies.cs",
+              "RelativeToolTip": "Servieses\\ReviewServies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:50:28.642Z",
+              "WhenOpened": "2024-12-16T09:50:09.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IReviewService.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IReviewService.cs",
+              "RelativeDocumentMoniker": "Servieses\\IReviewService.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IReviewService.cs",
+              "RelativeToolTip": "Servieses\\IReviewService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T05:59:57.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderProductInput.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\OrderProductInput.cs",
+              "RelativeDocumentMoniker": "DTO\\OrderProductInput.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\OrderProductInput.cs",
+              "RelativeToolTip": "DTO\\OrderProductInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T13:27:07.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\UserRepo.cs",
-              "RelativeDocumentMoniker": "Repositry\\UserRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\UserRepo.cs",
-              "RelativeToolTip": "Repositry\\UserRepo.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAuwFsAAAAoAAAA",
+              "Title": "OrderRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\OrderRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\OrderRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\OrderRepo.cs",
+              "RelativeToolTip": "Repositry\\OrderRepo.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAwFYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:47:09.002Z",
+              "WhenOpened": "2024-12-16T09:47:35.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "OrderConroller.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\OrderConroller.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderConroller.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\OrderConroller.cs",
+              "RelativeToolTip": "Controllers\\OrderConroller.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:51:06.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:26:29.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:22:44.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderPrdouctServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\OrderPrdouctServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\OrderPrdouctServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\OrderPrdouctServies.cs",
+              "RelativeToolTip": "Servieses\\OrderPrdouctServies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:49:56.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IOrderServices.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IOrderServices.cs",
+              "RelativeDocumentMoniker": "Servieses\\IOrderServices.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IOrderServices.cs",
+              "RelativeToolTip": "Servieses\\IOrderServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:25:41.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "UserServies.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\UserServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\UserServies.cs",
               "RelativeDocumentMoniker": "Servieses\\UserServies.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\UserServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\UserServies.cs",
               "RelativeToolTip": "Servieses\\UserServies.cs",
               "ViewState": "AQIAAFcAAAAAAAAAAAAAABQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -357,24 +455,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
+              "Title": "20241219100920_updateAddProductnames.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219100920_updateAddProductnames.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241219100920_updateAddProductnames.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219100920_updateAddProductnames.cs",
+              "RelativeToolTip": "Migrations\\20241219100920_updateAddProductnames.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:09:20.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOrderPrdouctServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IOrderPrdouctServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\IOrderPrdouctServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IOrderPrdouctServies.cs",
+              "RelativeToolTip": "Servieses\\IOrderPrdouctServies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:25:45.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUserServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IUserServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\IUserServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IUserServies.cs",
+              "RelativeToolTip": "Servieses\\IUserServies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:17:48.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IProductServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IProductServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\IProductServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\IProductServies.cs",
+              "RelativeToolTip": "Servieses\\IProductServies.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T09:24:17.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductServies.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\ProductServies.cs",
+              "RelativeDocumentMoniker": "Servieses\\ProductServies.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Servieses\\ProductServies.cs",
+              "RelativeToolTip": "Servieses\\ProductServies.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:49:04.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\ProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\ProductRepo.cs",
               "RelativeDocumentMoniker": "Repositry\\ProductRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\ProductRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\ProductRepo.cs",
               "RelativeToolTip": "Repositry\\ProductRepo.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAuwDsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:47:21.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
+              "Title": "OrderProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\OrderProductRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\OrderProductRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\OrderProductRepo.cs",
+              "RelativeToolTip": "Repositry\\OrderProductRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:48:08.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "IProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\IProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IProductRepo.cs",
               "RelativeDocumentMoniker": "Repositry\\IProductRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\IProductRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IProductRepo.cs",
               "RelativeToolTip": "Repositry\\IProductRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,85 +559,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IUserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\IUserRepo.cs",
-              "RelativeDocumentMoniker": "Repositry\\IUserRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\IUserRepo.cs",
-              "RelativeToolTip": "Repositry\\IUserRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "DocumentIndex": 26,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAG8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T09:40:39.192Z",
+              "WhenOpened": "2024-12-16T09:50:48.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ReviewServies.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\ReviewServies.cs",
-              "RelativeDocumentMoniker": "Servieses\\ReviewServies.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\ReviewServies.cs",
-              "RelativeToolTip": "Servieses\\ReviewServies.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAywFoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:50:09.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IReviewService.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IReviewService.cs",
-              "RelativeDocumentMoniker": "Servieses\\IReviewService.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\IReviewService.cs",
-              "RelativeToolTip": "Servieses\\IReviewService.cs",
+              "DocumentIndex": 27,
+              "Title": "OrderProductController.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\OrderProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderProductController.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\OrderProductController.cs",
+              "RelativeToolTip": "Controllers\\OrderProductController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T05:59:57.574Z",
+              "WhenOpened": "2024-12-16T09:51:36.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAABQAAAAJAAAA",
+              "DocumentIndex": 29,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\PagedResult.cs",
+              "RelativeDocumentMoniker": "DTO\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\PagedResult.cs",
+              "RelativeToolTip": "DTO\\PagedResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:52:05.99Z",
+              "WhenOpened": "2024-12-17T12:25:27.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 32,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\UserRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\UserRepo.cs",
+              "RelativeToolTip": "Repositry\\UserRepo.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAuwFsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:47:09.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20241219073046_updateName.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219073046_updateName.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241219073046_updateName.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241219073046_updateName.cs",
+              "RelativeToolTip": "Migrations\\20241219073046_updateName.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T07:30:46.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAEAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:50:28.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\appsettings.json",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-16T10:25:30.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ReviewRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\ReviewRepo.cs",
-              "RelativeDocumentMoniker": "Repositry\\ReviewRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\ReviewRepo.cs",
-              "RelativeToolTip": "Repositry\\ReviewRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 33,
+              "Title": "IUserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IUserRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\IUserRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\IUserRepo.cs",
+              "RelativeToolTip": "Repositry\\IUserRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:48:21.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T09:40:39.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 35,
+              "Title": "ReviewRepo.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\ReviewRepo.cs",
+              "RelativeDocumentMoniker": "Repositry\\ReviewRepo.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Repositry\\ReviewRepo.cs",
+              "RelativeToolTip": "Repositry\\ReviewRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:48:21.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "UserServies.cs",
               "DocumentMoniker": "C:\\Users\\codeline User\\AppData\\Local\\SourceServer\\d54004a0cdcc2c10aee73b58309ae1442339019c7fed72da20aeaa9ca2c2221f\\Servieses\\UserServies.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\d54004a0cdcc2c10aee73b58309ae1442339019c7fed72da20aeaa9ca2c2221f\\Servieses\\UserServies.cs",
@@ -474,162 +685,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "OrderProductController.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\OrderProductController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderProductController.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Controllers\\OrderProductController.cs",
-              "RelativeToolTip": "Controllers\\OrderProductController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:51:36.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T10:26:29.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 49,
               "Title": "20241218053529_updateReviewAdded.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241218053529_updateReviewAdded.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241218053529_updateReviewAdded.cs",
               "RelativeDocumentMoniker": "Migrations\\20241218053529_updateReviewAdded.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241218053529_updateReviewAdded.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241218053529_updateReviewAdded.cs",
               "RelativeToolTip": "Migrations\\20241218053529_updateReviewAdded.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T05:35:29.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T05:35:29.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Review.cs",
-              "RelativeDocumentMoniker": "models\\Review.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\Review.cs",
-              "RelativeToolTip": "models\\Review.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAqwA8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:46:51.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "ReviewInput.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\ReviewInput.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\ReviewInput.cs",
               "RelativeDocumentMoniker": "DTO\\ReviewInput.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\ReviewInput.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\ReviewInput.cs",
               "RelativeToolTip": "DTO\\ReviewInput.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T05:32:43.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T05:32:43.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "20241217183831_updatetype.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217183831_updatetype.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217183831_updatetype.cs",
               "RelativeDocumentMoniker": "Migrations\\20241217183831_updatetype.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217183831_updatetype.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217183831_updatetype.cs",
               "RelativeToolTip": "Migrations\\20241217183831_updatetype.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T18:38:32.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T18:38:32.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "OrderProductInput.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\OrderProductInput.cs",
-              "RelativeDocumentMoniker": "DTO\\OrderProductInput.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\OrderProductInput.cs",
-              "RelativeToolTip": "DTO\\OrderProductInput.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:27:07.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "OrderRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\OrderRepo.cs",
-              "RelativeDocumentMoniker": "Repositry\\OrderRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\OrderRepo.cs",
-              "RelativeToolTip": "Repositry\\OrderRepo.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwCQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:47:35.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "OrderPrdouctServies.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\OrderPrdouctServies.cs",
-              "RelativeDocumentMoniker": "Servieses\\OrderPrdouctServies.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Servieses\\OrderPrdouctServies.cs",
-              "RelativeToolTip": "Servieses\\OrderPrdouctServies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:49:56.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "OrderProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\OrderProductRepo.cs",
-              "RelativeDocumentMoniker": "Repositry\\OrderProductRepo.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Repositry\\OrderProductRepo.cs",
-              "RelativeToolTip": "Repositry\\OrderProductRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:48:08.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PagedResult.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\PagedResult.cs",
-              "RelativeDocumentMoniker": "DTO\\PagedResult.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\PagedResult.cs",
-              "RelativeToolTip": "DTO\\PagedResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T12:25:27.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "OrderPorduct.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\OrderPorduct.cs",
-              "RelativeDocumentMoniker": "models\\OrderPorduct.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\models\\OrderPorduct.cs",
-              "RelativeToolTip": "models\\OrderPorduct.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:46:28.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "UserOutputDot.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\UserOutputDot.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\UserOutputDot.cs",
               "RelativeDocumentMoniker": "DTO\\UserOutputDot.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\UserOutputDot.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\UserOutputDot.cs",
               "RelativeToolTip": "DTO\\UserOutputDot.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -637,11 +733,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "ProductInput.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\ProductInput.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\ProductInput.cs",
               "RelativeDocumentMoniker": "DTO\\ProductInput.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\ProductInput.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\ProductInput.cs",
               "RelativeToolTip": "DTO\\ProductInput.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -649,11 +745,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "20241217103141_updatephone.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217103141_updatephone.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217103141_updatephone.cs",
               "RelativeDocumentMoniker": "Migrations\\20241217103141_updatephone.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217103141_updatephone.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217103141_updatephone.cs",
               "RelativeToolTip": "Migrations\\20241217103141_updatephone.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -661,11 +757,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "UserInputDto.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\UserInputDto.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\UserInputDto.cs",
               "RelativeDocumentMoniker": "DTO\\UserInputDto.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\DTO\\UserInputDto.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\DTO\\UserInputDto.cs",
               "RelativeToolTip": "DTO\\UserInputDto.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAuwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -673,11 +769,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "SystemProductOrder.csproj",
-              "DocumentMoniker": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\SystemProductOrder.csproj",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\SystemProductOrder.csproj",
               "RelativeDocumentMoniker": "SystemProductOrder.csproj",
-              "ToolTip": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\SystemProductOrder.csproj",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\SystemProductOrder.csproj",
               "RelativeToolTip": "SystemProductOrder.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -685,11 +781,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "20241217092147_update.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217092147_update.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217092147_update.cs",
               "RelativeDocumentMoniker": "Migrations\\20241217092147_update.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217092147_update.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217092147_update.cs",
               "RelativeToolTip": "Migrations\\20241217092147_update.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -697,11 +793,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "20241217091556_updateCascading.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217091556_updateCascading.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217091556_updateCascading.cs",
               "RelativeDocumentMoniker": "Migrations\\20241217091556_updateCascading.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217091556_updateCascading.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217091556_updateCascading.cs",
               "RelativeToolTip": "Migrations\\20241217091556_updateCascading.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAAADIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -709,11 +805,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeToolTip": "Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ViewState": "AQIAAMMAAAAAAAAAAAAAAM0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -721,11 +817,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "20241217091329_addenumrole.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217091329_addenumrole.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217091329_addenumrole.cs",
               "RelativeDocumentMoniker": "Migrations\\20241217091329_addenumrole.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241217091329_addenumrole.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241217091329_addenumrole.cs",
               "RelativeToolTip": "Migrations\\20241217091329_addenumrole.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAAACUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -733,11 +829,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "20241216121722_addjsonignore.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241216121722_addjsonignore.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241216121722_addjsonignore.cs",
               "RelativeDocumentMoniker": "Migrations\\20241216121722_addjsonignore.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241216121722_addjsonignore.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241216121722_addjsonignore.cs",
               "RelativeToolTip": "Migrations\\20241216121722_addjsonignore.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -745,27 +841,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "20241216103627_CreateInitial.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241216103627_CreateInitial.cs",
+              "DocumentMoniker": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241216103627_CreateInitial.cs",
               "RelativeDocumentMoniker": "Migrations\\20241216103627_CreateInitial.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\Migrations\\20241216103627_CreateInitial.cs",
+              "ToolTip": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\Migrations\\20241216103627_CreateInitial.cs",
               "RelativeToolTip": "Migrations\\20241216103627_CreateInitial.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T10:36:28.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\codeline User\\source\\repos\\SystemOrderProduct\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T10:22:44.335Z"
             }
           ]
         }

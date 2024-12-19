@@ -6,8 +6,7 @@ namespace SystemProductOrder.Servieses
 {
     public interface IOrderServices
     {
-        List<Order> GetAllOrders(int id, ClaimsPrincipal user);
-        Order GetOrderById(int id, ClaimsPrincipal user);
+        List<Order> GetAllOrders(int id);
         Task<bool> HasUserPurchasedProduct(int userId, int productId);
         void PlaceOrder(int userId, List<OrderProductInput> orderDetails);
     }

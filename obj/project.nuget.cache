@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Y9ojFhnfJM=",
+  "dgSpecHash": "UgAC+FS/3HA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\SystemProductOrder.csproj",
+  "projectFilePath": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\SystemProductOrder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\codeline User\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\codeline User\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using SystemProductOrder.DTO;
 using SystemProductOrder.models;
 using SystemProductOrder.Servieses;
@@ -28,8 +29,9 @@ namespace SystemProductOrder.Controllers
         {
             try
             {
+                int userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
                 // Call the service layer to handle the review addition
-                _reviewService.AddReview(review);
+                _reviewService.AddReview(userId,review);
 
                 return Ok("Review added successfully.");
             }

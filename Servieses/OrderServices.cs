@@ -21,80 +21,94 @@ namespace SystemProductOrder.Servieses
         {
             decimal totalAmount = 0;
 
-            // Check stock and calculate the total amount
+            // Check if the user already has an open order
+            var existingOrder = _orderRepo.GetOrderByUserId(userId);
+
+            // If no order exists, create a new one
+            if (existingOrder == null)
+            {
+                existingOrder = new Order
+                {
+                    UserId = userId,
+                    OrderDate = DateTime.Now,
+                    TotalAmount = 0 // Will be updated later
+                };
+                _orderRepo.AddOrder(existingOrder);
+            }
+
+            // Loop through order details to add/update OrderProduct and calculate total
             foreach (var item in orderDetails)
             {
+                // Fetch product details
                 var product = _productRepo.GetProductsByID(item.ProductId);
-
                 if (product == null)
                 {
                     throw new Exception($"Product with ID {item.ProductId} not found.");
                 }
 
+                // Check stock availability
                 if (product.Stock < item.Quantity)
                 {
                     throw new Exception($"Insufficient stock for product {product.Name}. Available stock: {product.Stock}.");
                 }
 
-                // Calculate total price for the current product
+                // Check if the product is already in the order
+                var existingOrderProduct = _orderRepo.GetOrderProduct(existingOrder.Oid, item.ProductId);
+                if (existingOrderProduct != null)
+                {
+                    // Update quantity if product already exists in the order
+                    existingOrderProduct.Quantity += item.Quantity;
+                    _orderRepo.UpdateOrderProduct(existingOrderProduct);
+                }
+                else
+                {
+                    // Add new OrderProduct entry
+                    var orderProduct = new OrderPorduct
+                    {
+                        OrderId = existingOrder.Oid,
+                        ProductId = item.ProductId,
+                        ProductName = product.Name, // Add the product name
+                        Quantity = item.Quantity
+                    };
+                    _orderRepo.AddOrderProduct(orderProduct);
+                }
+
+                // Deduct stock for the product
+                product.Stock -= item.Quantity;
+                _productRepo.UpdateProduct(product);
+
+                // Calculate the total amount for this product
                 totalAmount += product.Price * item.Quantity;
             }
 
-            // Create the Order
-            var newOrder = new Order
-            {
-                UserId = userId,
-                OrderDate = DateTime.Now,
-                TotalAmount = totalAmount
-            };
-
-            _orderRepo.AddOrder(newOrder); // Save the Order
-            int orderId = newOrder.Oid; // Get the generated Order ID
-
-            // Create entries in the OrderProduct table and update stock
-            foreach (var item in orderDetails)
-            {
-                var product = _productRepo.GetProductsByID(item.ProductId);
-
-                // Add OrderProduct entry
-                var orderProduct = new OrderPorduct
-                {
-                    OrderId = orderId,
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity
-                };
-                _orderRepo.AddOrderProduct(orderProduct);
-
-                // Deduct stock
-                product.Stock -= item.Quantity;
-                _productRepo.UpdateProduct(product);
-            }
-
+            // Update the total amount for the order
+            existingOrder.TotalAmount += totalAmount;
+            _orderRepo.UpdateOrder(existingOrder);
         }
-        public List<Order> GetAllOrders(int id,ClaimsPrincipal user)
+
+        //public List<Order> GetAllOrders(int id, ClaimsPrincipal user)
+        //{
+
+        //    return _orderRepo.GetOrdersByUserId(id);
+        //}
+        public List<Order> GetAllOrders(int userId)
         {
+            // Get orders for the user
+            var orders = _orderRepo.GetOrdersByUserId(userId);
 
-            //Creates a new Product object from the input data transfer object(DTO).
-            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
-            if (!isAdmin)
+            // Map orders to DTOs and fetch product names for each order
+            return orders.Select(order => new Order
             {
-                throw new UnauthorizedAccessException("Only admin users can Show the order  products.");
-            }
-            return _orderRepo.GetOrdersByUserId(id);
-        }
+                Oid = order.Oid,
+                UserId = order.UserId,
+                OrderDate = order.OrderDate,
+                TotalAmount = order.TotalAmount,
+                ProductNames = _orderRepo.GetProductNamesByOrderId(order.Oid) // Use repository to get product names
+            }).ToList();
 
-        public Order GetOrderById(int id, ClaimsPrincipal user)
-        {
 
-            //Creates a new Product object from the input data transfer object(DTO).
-            var isAdmin = user.Claims.Any(c => c.Type == ClaimTypes.Role && c.Value == "Admin");
-            if (!isAdmin)
-            {
-                throw new UnauthorizedAccessException("Only admin users can Show the order  products.");
-            }
-            return _orderRepo.GetOrderDetailsById(id);
         }
-        public async Task<bool> HasUserPurchasedProduct(int userId, int productId)
+            public async Task<bool> HasUserPurchasedProduct(int userId, int productId)
         {
             try
             {
@@ -124,5 +138,6 @@ namespace SystemProductOrder.Servieses
                 throw new InvalidOperationException("Error checking if user has purchased product.", ex);
             }
         }
+
     }
 }

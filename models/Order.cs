@@ -13,6 +13,7 @@ namespace SystemProductOrder.models
         public int UserId { get; set; }
 
         [ForeignKey("UserId")]
+        [JsonIgnore]
         public User User { get; set; }
 
         public DateTime OrderDate { get; set; }
@@ -21,6 +22,7 @@ namespace SystemProductOrder.models
         [Range(0.01, double.MaxValue, ErrorMessage = "Total amount must be a positive value.")]
         public decimal TotalAmount { get; set; } // This can be calculated from OrderProducts.
 
+        public List<string> ProductNames { get; set; }
         // Navigation Properties
         [JsonIgnore]
         public virtual ICollection<OrderPorduct> OrderProducts { get; set; }

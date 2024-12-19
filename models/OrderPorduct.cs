@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Security.Cryptography;
+using System.Text.Json.Serialization;
 
 namespace SystemProductOrder.models
 {
@@ -12,12 +13,17 @@ namespace SystemProductOrder.models
     {
         public int OrderId { get; set; }
 
+        [Required]
+        public string ProductName { get; set; }
+
         [ForeignKey("OrderId")]
+        [JsonIgnore]
         public virtual Order Order { get; set; }
 
         public int ProductId { get; set; }
 
         [ForeignKey("ProductId")]
+        [JsonIgnore]
         public virtual Product Product { get; set; }
 
         [Required(ErrorMessage = "Quantity is required.")]

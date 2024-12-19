@@ -5,7 +5,7 @@ namespace SystemProductOrder.Servieses
 {
     public interface IReviewService
     {
-        void AddReview(ReviewInput review);
+        void AddReview(int userid,ReviewInput review);
         void DeleteReview(int userId, int reviewId);
         Review GetReviewById(int reviewId);
         Task<Review> GetReviewByUserAndProduct(int userId, int productId);

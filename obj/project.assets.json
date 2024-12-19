@@ -4921,11 +4921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\SystemProductOrder.csproj",
+      "projectUniqueName": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\SystemProductOrder.csproj",
       "projectName": "SystemProductOrder",
-      "projectPath": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\SystemProductOrder.csproj",
+      "projectPath": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\SystemProductOrder.csproj",
       "packagesPath": "C:\\Users\\codeline User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\codeline User\\Source\\Repos\\SystemOrderProduct\\obj\\",
+      "outputPath": "C:\\Users\\codeline User\\OneDrive\\Desktop\\last update ecommercs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\codeline User\\AppData\\Roaming\\NuGet\\NuGet.Config",

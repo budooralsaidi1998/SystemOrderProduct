@@ -29,6 +29,8 @@ namespace SystemProductOrder
             builder.Services.AddScoped<IReviewRepo, ReviewRepo>();
             builder.Services.AddScoped<IReviewService, ReviewService>();
 
+            builder.Services.AddScoped<IOrderPrdouctServies, OrderPrdouctServies>();
+            builder.Services.AddScoped<IOrderProductRepo, OrderProductRepo>();
 
 
 

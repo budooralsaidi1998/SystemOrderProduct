@@ -6,8 +6,13 @@ namespace SystemProductOrder.Repositry
     {
         void AddOrder(Order order);
         void AddOrderProduct(OrderPorduct orderProduct);
+        Order GetOrderByUserId(int userId);
         Order GetOrderDetailsById(int orderId);
+        OrderPorduct GetOrderProduct(int orderId, int productId);
         List<Order> GetOrdersByUserId(int userId);
         Task<List<Order>> GetOrdersByUserIdList(int userId);
+        void UpdateOrderProduct(OrderPorduct orderProduct);
+        void UpdateOrder(Order order);
+        List<string> GetProductNamesByOrderId(int orderId);
     }
 }

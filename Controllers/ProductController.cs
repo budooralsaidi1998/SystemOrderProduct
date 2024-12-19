@@ -16,13 +16,15 @@ namespace SystemProductOrder.Controllers
         private readonly IProductServies _ProductService;
         private readonly IConfiguration _configuration;
         private readonly IUserServies userServies;
+        private readonly IOrderPrdouctServies _orderPrdouctServies;
 
         // Constructor for injecting dependencies
-        public ProductController(IProductServies ProductService, IConfiguration configuration , IUserServies _userServies)
+        public ProductController(IProductServies ProductService, IConfiguration configuration , IUserServies _userServies , IOrderPrdouctServies oderpdouctserviese)
         {
             _ProductService = ProductService; // Injected service for handling product-related logic.
             _configuration = configuration;   // Injected configuration for application settings.
              userServies = _userServies;
+             _orderPrdouctServies = oderpdouctserviese;
         }
 
 
@@ -104,7 +106,7 @@ namespace SystemProductOrder.Controllers
             try
             {
                 // Delegates the task of fetching the product by ID to the service layer.
-                var result = _ProductService.GetDetailsProductByID(id);
+                var result = _orderPrdouctServies.GetOrderDetailsById(id);
 
                 // Returns the product details.
                 return Ok(result);

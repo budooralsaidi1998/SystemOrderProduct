@@ -57,6 +57,43 @@ namespace SystemProductOrder.Repositry
                 .Include(o => o.OrderProducts)  // Ensure that OrderProducts are included in the result
                 .ToListAsync();
         }
+        public Order GetOrderByUserId(int userId)
+        {
+            // Retrieve the first existing order for the given user
+            return _context.orders.FirstOrDefault(o => o.UserId == userId);
+        }
+        public OrderPorduct GetOrderProduct(int orderId, int productId)
+        {
+            return _context.orderPorducts
+                           .FirstOrDefault(op => op.OrderId == orderId && op.ProductId == productId);
+        }
+        public void UpdateOrderProduct(OrderPorduct orderProduct)
+        {
+            // Mark the entity as modified
+            _context.orderPorducts.Update(orderProduct);
+
+            // Save changes to the database
+            _context.SaveChanges();
+        }
+
+        public void UpdateOrder(Order order)
+        {
+            // Mark the entity as modified
+            _context.orders.Update(order);
+
+            // Save changes to the database
+            _context.SaveChanges();
+        }
+        public List<string> GetProductNamesByOrderId(int orderId)
+        {
+            return _context.orderPorducts
+                             .Where(op => op.OrderId == orderId)   // Filter by OrderId
+                             .Include(op => op.Product)           // Load related Product data
+                             .Select(op => op.Product.Name)       // Select Product Name
+                             .ToList();                           // Convert to List and return
+        }
+
+
     }
 }
 
