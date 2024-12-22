@@ -93,6 +93,19 @@ namespace SystemProductOrder.Repositry
                              .ToList();                           // Convert to List and return
         }
 
+        public List<OrderPorduct> GetOrderProductsByOrderId(int orderId)
+        {
+            return _context.orderPorducts
+                             .Where(op => op.OrderId == orderId)
+                             .Include(op => op.Product) // Assuming a navigation property to Product
+                             .Select(op => new OrderPorduct
+                             {
+                                 ProductId = op.ProductId,
+                                 ProductName = op.Product.Name, // Fetch the product name
+                                 Quantity = op.Quantity
+                             })
+                             .ToList();
+        }
 
     }
 }

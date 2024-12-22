@@ -31,7 +31,8 @@ namespace SystemProductOrder.Servieses
                 {
                     UserId = userId,
                     OrderDate = DateTime.Now,
-                    TotalAmount = 0 // Will be updated later
+                    TotalAmount = 0 ,// Will be updated later
+                    ProductNames = existingOrder.ProductNames
                 };
                 _orderRepo.AddOrder(existingOrder);
             }

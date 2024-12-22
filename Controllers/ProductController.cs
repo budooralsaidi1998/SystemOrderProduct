@@ -106,7 +106,7 @@ namespace SystemProductOrder.Controllers
             try
             {
                 // Delegates the task of fetching the product by ID to the service layer.
-                var result = _orderPrdouctServies.GetOrderDetailsById(id);
+                var result = _ProductService.GetDetailsProductByID(id);
 
                 // Returns the product details.
                 return Ok(result);

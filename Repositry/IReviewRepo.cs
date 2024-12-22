@@ -5,9 +5,11 @@ namespace SystemProductOrder.Repositry
     public interface IReviewRepo
     {
         void AddReview(Review review);
-        List<Review> GetReviewsByProductId(int productId);
-        bool HasUserReviewedProduct(int userId, int productId);
-        void UpdateProductRating(int productId, double averageRating);
-        bool UserHasOrderedProduct(int userId, int productId);
+        void DeleteReview(Review review);
+        IEnumerable<Review> GetAllReviewsForProduct(int productId, int page, int pageSize);
+        Review GetReview(int reviewId);
+        double RecalculateProductRating(int productId);
+        void UpdateReview(Review review);
+        public Review GetReviewfordelete(int reviewid);
     }
 }

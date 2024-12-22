@@ -1,16 +1,12 @@
-﻿using SystemProductOrder.DTO;
-using SystemProductOrder.models;
+﻿using SystemProductOrder.models;
 
 namespace SystemProductOrder.Servieses
 {
     public interface IReviewService
     {
-        // void AddReview(int userid,ReviewInput review);
-        void AddReview(int userId, int productId, string comment, int rating);
-        //void DeleteReview(int userId, int reviewId);
-        //Review GetReviewById(int reviewId);
-        //Task<Review> GetReviewByUserAndProduct(int userId, int productId);
-        //List<Review> GetReviewsForProduct(int productId, int page, int pageSize);
-        //void UpdateReview(int userId, int reviewId, int rating, string comment);
+        void AddReview(Review review, int userId);
+        void DeleteReview(int reviewId, int userId, string role);
+        IEnumerable<Review> GetAllReviewsForProduct(int productId, int page, int pageSize);
+        void UpdateReview(Review review, int userId);
     }
 }

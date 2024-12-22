@@ -14,5 +14,6 @@ namespace SystemProductOrder.Repositry
         void UpdateOrderProduct(OrderPorduct orderProduct);
         void UpdateOrder(Order order);
         List<string> GetProductNamesByOrderId(int orderId);
+        List<OrderPorduct> GetOrderProductsByOrderId(int orderId);
     }
 }

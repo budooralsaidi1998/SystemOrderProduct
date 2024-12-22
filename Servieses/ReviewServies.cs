@@ -1,4 +1,5 @@
-﻿using SystemProductOrder.DTO;
+﻿using System.Security.Claims;
+using SystemProductOrder.DTO;
 using SystemProductOrder.models;
 using SystemProductOrder.Repositry;
 
@@ -17,144 +18,241 @@ namespace SystemProductOrder.Servieses
             _productRepo = productRepo;
             _userRepo = userRepo;
         }
-
-        //public void AddReview(int userid, ReviewInput review)
+        //public void AddReview(Review review, int userId)
         //{
-        //    // Ensure rating is valid
-        //    if (review.Rating < 1 || review.Rating > 5)
-        //        throw new ArgumentException("Rating must be between 1 and 5.");
-
-        //    // Ensure user has purchased the product
-        //    var orders = _orderRepo.GetOrdersByUserId(review.UserId);
-        //    var hasPurchased = orders.Any(order => order.OrderProducts.Any(op => op.ProductId == review.ProductId));
-
-        //    if (!hasPurchased)
-        //        throw new InvalidOperationException("User must purchase the product before reviewing.");
-
-        //    // Ensure user has not already reviewed the product
-        //    var existingReview = _reviewRepo.GetReviewByUserAndProduct(review.UserId, review.ProductId);
-        //    if (existingReview != null)
-        //        throw new InvalidOperationException("User has already reviewed this product.");
-        //    //to know the product name 
-        //    var productname = _productRepo.GetProductsByID(review.ProductId);
-        //    if (productname == null)
-        //        throw new KeyNotFoundException("Product not found.");
-        //    // Add the review
-        //    //review.ReviewDate = DateTime.UtcNow;
-        //    // Set ReviewDate
-        //    var newre = new Review
-        //    {
-        //        UserId = userid,
-        //        //ProductId = review.ProductId,
-        //        ProductName = productname.Name,
-        //        Comment = review.Comment,
-        //        Rating = review.Rating,
-        //        //ReviewDate = review.ReviewDate,
-        //    };
-        //    _reviewRepo.AddReview(newre);
-
-        //    // Recalculate overall rating
-        //    var overallRating = _reviewRepo.CalculateOverallRating(review.ProductId);
+        //    // Check if the product exists
         //    var product = _productRepo.GetProductsByID(review.ProductId);
-        //    product.OverallRating = overallRating;
+        //    if (product == null)
+        //    {
+        //        throw new InvalidOperationException($"Product with ID {review.ProductId} does not exist.");
+        //    }
+
+        //    // Check if the user has already reviewed this product
+        //    var existingReview = _reviewRepo.HasUserReviewedProduct(userId, review.ProductId);
+        //    if (existingReview)
+        //    {
+        //        throw new InvalidOperationException("You have already reviewed this product.");
+        //    }
+
+
+        //    // Check if the user has purchased the product
+        //    var hasPurchased = _reviewRepo.UserHasOrderedProduct(userId, review.ProductId);
+        //    if (!hasPurchased)
+        //    {
+        //        throw new InvalidOperationException("You can only review products you have purchased.");
+        //    }
+
+        //    // Add the review
+        //    _reviewRepo.AddReview(review);
+
+        //    // Calculate the average rating for the product
+        //    var averageRating = _reviewRepo.CalculateOverallRating(review.ProductId);
+
+        //    // Update the product's overall rating
+        //    product.OverallRating = averageRating;
         //    _productRepo.UpdateProduct(product);
         //}
-        public void AddReview(int userId, int productId, string comment, int rating)
+
+
+        //public PagedResult<ReviewInput> GetAllReviewsForProduct(int productId, int page, int pageSize, ClaimsPrincipal user)
+        //{
+        //    // Fetch reviews from the repository
+        //    var reviews = _reviewRepo.GetReviewsByProductId(productId);
+
+        //    // Fetch product details
+        //    var product = _productRepo.GetProductsByID(productId);
+        //    if (product == null)
+        //    {
+        //        throw new Exception($"Product with ID {productId} not found.");
+        //    }
+
+        //    // Paginate results
+        //    var pagedReviews = reviews.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+        //    // Extract the user's name from authentication
+        //    var userName = user.Identity?.Name ?? "Unknown";
+
+        //    // Map to DTO
+        //    var result = new PagedResult<ReviewInput>
+        //    {
+        //        reviews = pagedReviews.Select(r => new ReviewInput
+        //        {
+        //            //UserName = userName,
+        //            //ProductName = product.Name,
+        //             ProductId = productId,
+        //            Rating = r.Rating,
+        //            Comment = r.Comment,
+        //            DateCreated = r.ReviewDate
+        //        }).ToList(),
+        //        numberpage = page,
+        //        PageSize = pageSize,
+        //        TotalItems = reviews.Count
+        //    };
+
+        //    return result;
+        //}
+
+
+        //public void UpdateReview(ReviewInput reviewInput, int userId,int idreview)
+        //{
+        //    // Retrieve the existing review
+        //    var existingReview = _reviewRepo.GetReviewById(idreview);
+        //    if (existingReview == null)
+        //    {
+        //        throw new InvalidOperationException($"Review with ID {reviewInput.rid} not found.");
+        //    }
+
+        //    // Ensure the review belongs to the authenticated user
+        //    if (existingReview.UserId != userId)
+        //    {
+        //        throw new UnauthorizedAccessException("You can only update your own reviews.");
+        //    }
+
+        //    // Ensure the user has purchased the product
+        //    var hasPurchased = _reviewRepo.UserHasOrderedProduct(userId, reviewInput.ProductId);
+        //    if (!hasPurchased)
+        //    {
+        //        throw new InvalidOperationException("You cannot update a review for a product you haven't purchased.");
+        //    }
+
+        //    // Update the review fields
+        //    existingReview.Rating = reviewInput.Rating;
+        //    existingReview.Comment = reviewInput.Comment;
+        //    existingReview.ReviewDate = reviewInput.DateCreated;
+
+        //    // Save the updated review to the database
+        //    _reviewRepo.UpdateReview(existingReview);
+
+        //    // Recalculate the product's overall rating
+        //    var averageRating = _reviewRepo.CalculateOverallRating(reviewInput.ProductId);
+        //    var product = _productRepo.GetProductsByID(reviewInput.ProductId);
+        //    if (product != null)
+        //    {
+        //        product.OverallRating = averageRating;
+        //        _productRepo.UpdateProduct(product);
+        //    }
+        //}
+        //public void DeleteReview(int reviewId, int userId, string role)
+        //{
+        //    // Fetch the review
+        //    var review = _reviewRepo.GetReviewById(reviewId);
+        //    if (review == null)
+        //    {
+        //        throw new InvalidOperationException($"Review with ID {reviewId} not found.");
+        //    }
+
+        //    // Validate permissions
+        //    if (role != "Admin" && review.UserId != userId)
+        //    {
+        //        throw new UnauthorizedAccessException("You do not have permission to delete this review.");
+        //    }
+
+        //    // Delete the review
+        //    _reviewRepo.DeleteReview(review.Rid);
+
+        //    // Recalculate the product's overall rating
+        //    var averageRating = _reviewRepo.CalculateOverallRating(review.ProductId);
+        //    var product = _productRepo.GetProductsByID(review.ProductId);
+        //    if (product != null)
+        //    {
+        //        product.OverallRating = averageRating;
+        //        _productRepo.UpdateProduct(product);
+        //    }
+        //}
+        public void AddReview(Review review, int userId)
         {
-                     if (rating < 1 || rating > 5)
-                 throw new ArgumentException("Rating must be between 1 and 5.");
-                // Step 1: Check if the user has ordered the product
-                if (!_reviewRepo.UserHasOrderedProduct(userId, productId))
+            var orders = _orderRepo.GetOrdersByUserId(userId);
+            if (!orders.Any(o => o.OrderProducts.Any(op => op.ProductId == review.ProductId)))
             {
-                throw new Exception("You must order the product before leaving a review.");
+                throw new InvalidOperationException("User cannot review a product they have not purchased.");
             }
-
-            // Step 2: Check if the user has already reviewed the product
-            if (_reviewRepo.HasUserReviewedProduct(userId, productId))
+            var existingReview = _reviewRepo.GetAllReviewsForProduct(review.ProductId, 1, int.MaxValue)
+                .FirstOrDefault(r => r.UserId == userId);
+            if (existingReview != null)
             {
-                throw new Exception("You have already reviewed this product.");
+                throw new InvalidOperationException("User cannot review the same product more than once.");
             }
-
-            // Step 3: Add the new review
-            var review = new Review
+            if (review.Rating < 1 || review.Rating > 5)
             {
-                UserId = userId,
-                ProductId = productId,
-                Comment = comment,
-                Rating = rating,
-                ReviewDate = DateTime.Now
-            };
+                throw new InvalidOperationException("Rating must be between 1 and 5.");
+            }
             _reviewRepo.AddReview(review);
+            _reviewRepo.RecalculateProductRating(review.ProductId);
+        }
+        public IEnumerable<Review> GetAllReviewsForProduct(int productId, int page, int pageSize)
+        {
+            return _reviewRepo.GetAllReviewsForProduct(productId, page, pageSize);
+        }
+        //public void UpdateReview(Review review, int userId)
+        //{
+        //    var existingReview = _reviewRepo.GetReview(review.Rid);
+        //    if (existingReview == null)
+        //    {
+        //        throw new InvalidOperationException("User can only update their own reviews.");
+        //    }
+        //    if (review.Rating < 1 || review.Rating > 5)
+        //    {
+        //        throw new InvalidOperationException("Rating must be between 1 and 5.");
+        //    }
+        //    existingReview.Rating = review.Rating;
+        //    existingReview.Comment = review.Comment;
+        //    _reviewRepo.UpdateReview(existingReview);
+        //    _reviewRepo.RecalculateProductRating(review.ProductId);
+        //}
+        public void UpdateReview(Review review, int userId)
+        {
+            // Fetch the existing review
+            var existingReview = _reviewRepo.GetReview(review.ProductId);
 
-            // Step 4: Calculate the average rating for the product
-            var reviews = _reviewRepo.GetReviewsByProductId(productId);
-            var averageRating = reviews.Average(r => r.Rating);
+            // Check if the review exists
+            if (existingReview == null)
+            {
+                throw new InvalidOperationException("The review does not exist.");
+            }
 
-            // Step 5: Update the product's overall rating
-            _reviewRepo.UpdateProductRating(productId, averageRating);
+            // Check if the review belongs to the current user
+            if (existingReview.UserId != userId)
+            {
+                throw new InvalidOperationException("User can only update their own reviews.");
+            }
+
+            // Check if the review is for the specified product
+            if (existingReview.ProductId != review.ProductId)
+            {
+                throw new InvalidOperationException("The review does not match the specified product.");
+            }
+
+            // Validate the rating value
+            if (review.Rating < 1 || review.Rating > 5)
+            {
+                throw new InvalidOperationException("Rating must be between 1 and 5.");
+            }
+
+            // Update the review details
+            existingReview.Rating = review.Rating;
+            existingReview.Comment = review.Comment;
+
+            // Save the updated review
+            _reviewRepo.UpdateReview(existingReview);
+
+            // Recalculate the product's overall rating
+            _reviewRepo.RecalculateProductRating(review.ProductId);
+        }
+        public void DeleteReview(int reviewid, int userId, string role)
+        { 
+        //    if (role != "NormalUser")
+        //    {
+        //        throw new InvalidOperationException("Only users can delete their own reviews.");
+        //    }
+            var review = _reviewRepo.GetReviewfordelete(reviewid);
+            if (review == null || review.UserId != userId)
+            {
+                throw new InvalidOperationException("User can only delete their own reviews.");
+            }
+            _reviewRepo.DeleteReview(review);
+            _reviewRepo.RecalculateProductRating(review.ProductId);
         }
     }
-    //public void UpdateReview(int userId, int reviewId, int rating, string comment)
-    //    {
-    //        // Fetch the review
-    //        var review = _reviewRepo.GetReview(userId, reviewId);
-    //        if (review == null || review.UserId != userId)
-    //            throw new InvalidOperationException("User does not have permission to update this review.");
-
-    //        // Update review attributes
-    //        review.Rating = rating;
-    //        review.Comment = comment;
-    //        review.ReviewDate = DateTime.UtcNow;
-
-    //        _reviewRepo.UpdateReview(review);
-
-    //        // Recalculate overall rating
-    //        var overallRating = _reviewRepo.CalculateOverallRating(review.ProductId);
-    //        var product = _productRepo.GetProductsByID(review.ProductId);
-    //        product.OverallRating = overallRating;
-    //        _productRepo.UpdateProduct(product);
-    //    }
-
-    //    public void DeleteReview(int userId, int reviewId)
-    //    {
-    //        // Fetch the review
-    //        var review = _reviewRepo.GetReview(userId, reviewId);
-    //        if (review == null || review.UserId != userId)
-    //            throw new InvalidOperationException("User does not have permission to delete this review.");
-
-    //        _reviewRepo.DeleteReview(reviewId);
-
-    //        // Recalculate overall rating
-    //        var overallRating = _reviewRepo.CalculateOverallRating(review.ProductId);
-    //        var product = _productRepo.GetProductsByID(review.ProductId);
-    //        product.OverallRating = overallRating;
-    //        _productRepo.UpdateProduct(product);
-    //    }
-
-    //    public List<Review> GetReviewsForProduct(int productId, int page, int pageSize)
-    //    {
-    //        return _reviewRepo.GetReviewsForProduct(productId, page, pageSize);
-    //    }
-    //    public async Task<Review> GetReviewByUserAndProduct(int userId, int productId)
-    //    {
-    //        try
-    //        {
-    //            return await _reviewRepo.GetReviewByUserAndProduct(userId, productId);
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            throw new InvalidOperationException("Error retrieving review for user and product.", ex);
-    //        }
-    //    }
-    //    public Review GetReviewById(int reviewId)
-    //    {
-    //        var review = _reviewRepo.GetReviewById(reviewId);
-    //        if (review == null)
-    //        {
-    //            throw new KeyNotFoundException("Review not found.");
-    //        }
-    //        return review;
-    //    }
-    //}
-
 }
+
+    
